@@ -1,0 +1,32 @@
+{
+  "name": "stream_flow",
+  "version": "1.0.0",
+  "description": "An app to track the flow of your favorite rivers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericnatejones/mean_stream_flow"
+  },
+  "keywords": [
+    "stream",
+    "flow",
+    "river",
+    "usgs",
+    "api"
+  ],
+  "author": "Eric Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericnatejones/mean_stream_flow/issues"
+  },
+  "homepage": "https://github.com/ericnatejones/mean_stream_flow",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.0"
+  }
+}
