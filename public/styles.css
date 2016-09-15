@@ -1,0 +1,11 @@
+[ng\:cloak],
+[ng-cloak],
+.ng-cloak {
+    display: none !important;
+}
+
+.completed {
+    text-decoration: line-through;
+    font-style: italic;
+    color: #cccccc;
+}

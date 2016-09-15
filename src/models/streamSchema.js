@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var streamSchema = new Schema({
-  streamName: {
+  name: {
     type: String,
     required: true
   },

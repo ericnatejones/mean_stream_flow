@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+
+        <form>
+            <div class="form-group">
+                <input placeholder="Site Id" class="form-control" ng-model="newStream.siteId"></input>
+            </div>
+            <button class="btn btn-primary center-block" ng-click="addStream(newStream)">Add Stream</button>
+        </form>
+    </div>
+    <div class="col-sm-4 col-sm-offset-4">
+        <div ng-repeat="stream in StreamService.streamList track by $index">
+          <h3 class="panel-title" ng-class="{ 'completed text-muted' : stream.completed }" ng-hide="stream.editing">{{ stream.name }}</h3>
+          <input type="text" class="form-control" ng-show="stream.editing" ng-model="stream.name">
+          <div class="panel-body">
+            <div class="checkbox">
+                <label ng-class="{ 'completed text-muted' : stream.completed }" ng-hide="stream.editing">
+                     {{ stream.siteId }}
+                </label>
+                <textarea type="text" class="form-control" ng-show="stream.editing" ng-model="stream.siteId"></textarea>
+                <button class="btn btn-danger btn-xs glyphicon glyphicon-trash pull-right" ng-click="deleteStream(stream, $index)"></button>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="StreamFlowApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stream Flow</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="container">
+
+    <navbar></navbar>
+
+    <div ng-view></div>
+
+    <!--  CDNs  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+
+
+    <!--  Authentication  -->
+    <script src="components/auth/auth.js"></script>
+    <script src="components/auth/login/login.js"></script>
+    <script src="components/auth/logout/logout.js"></script>
+    <script src="components/auth/signup/signup.js"></script>
+
+    <!--  Main Application  -->
+    <script src="app.js"></script>
+    <script src="components/streams/streams.js"></script>
+    <script src="components/streams/streamsService.js"></script>
+    <script src="components/navbar/navbar.js"></script>
+</body>
+
+</html>
